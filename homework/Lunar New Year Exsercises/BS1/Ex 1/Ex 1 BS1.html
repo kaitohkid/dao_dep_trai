@@ -1,0 +1,66 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise 1</title>
+	<link rel="shortcut icon" href="image/logoCofee.png" type="image/x-icon">
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+		<form action="#">
+			<div class="row">
+				<div class="container">
+					<div class="col-sm-6">
+						<label>Frist name</label>
+						<input type="text">
+					</div>
+					<div class="col-sm-6">
+						<label>Last name</label>
+						<input type="text">
+					</div>
+					<div class="col">
+						<label>
+							<input type="radio" name="Male">Male
+						</label>
+						<label>
+							<input type="radio"name="Female">Female
+						</label>
+					</div>
+					<div class="col-sm-6">
+						<label>
+							<input type="date" placeholder="mm/dd/yyy">
+						</label>
+					</div>
+					<div>
+						<label>
+							<input type="button" class="bg-primary text-white" value="Submit">
+						</label>
+					</div>
+				</div>
+			</div>
+		</form>
+		<script type="text/javascript">
+			$("#registration").validate({
+				rules:{
+					Fristname:"required",
+					lastname:"required"
+				},
+				messages:{
+					Fristname:"Trường này bắt buộc phải nhập",
+					lastname:"Trường này bắt buộc phải nhập"
+				},
+				submitHandler: function(form){
+					form.submit();
+				}
+			});
+		</script>
+	</body>
+</html>
