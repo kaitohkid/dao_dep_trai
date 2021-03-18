@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
    <head>
-        <title>  excercise 1 </title>
+        <title>  excercise 6 </title>
    </head>
 <body>
 <?php
-  $a= x ;
-  $b= y ;
-  if (x=y)
-  {
-      echo" tổng=:".(x+y);
-  }
-      else
-      {
-          echo"tổng=:",( (x+y)*3);
-      }
+$day=5;
+
+switch ($day) {
+    case 0:
+        echo "Monday";
+        break;
+    case 1:
+        echo "Tuesday";
+        break;
+    case 2:
+        echo "Wednesday";
+        break;
+    case 3:
+        echo "Thusday";
+        break;
+    case 4:
+        echo "Friday";
+        break;
+    case 5:
+        echo "Saturday";
+        break;
+    case 6:
+        echo "Sunday";
+        break;
+    default:
+        echo "Không có ngày nào";
+        break;
+}
 ?>
 </body>
 </html>

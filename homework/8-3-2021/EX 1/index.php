@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html>
-   <head>
-        <title>  excercise 1 </title>
-   </head>
-<body>
+
 <?php
-  $a= x ;
-  $b= y ;
-  if (x=y)
+  $a= 3 ;
+  $b= 3 ;
+  if ($a=$b)
   {
-      echo" tổng=:".(x+y);
+      echo" tổng=:".($a+$b);
   }
       else
       {
-          echo"tổng=:",( (x+y)*3);
+          echo"tổng=:",( ($a+$b)*3);
       }
 ?>
-</body>
-</html>
+ư
